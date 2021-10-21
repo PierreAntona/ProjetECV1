@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/PierreAntona/ProjetECV1/issues"
   },
-  "homepage": "https://github.com/PierreAntona/ProjetECV1#readme"
+  "homepage": "https://github.com/PierreAntona/ProjetECV1#readme",
+  "dependencies": {
+    "sass": "^1.43.2"
+  }
 }
