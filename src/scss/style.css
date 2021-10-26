@@ -47,6 +47,10 @@ html, body {
 .header .header_Menu li:hover {
   color: #2f63f4;
 }
+.header .header_Menu li a {
+  text-decoration: none;
+  color: #262626;
+}
 .header .header_Menu .active {
   color: #2f63f4;
 }
@@ -137,7 +141,7 @@ html, body {
   width: 100%;
 }
 .homeFirst .homeFirst_bottomPart {
-  margin-top: 8vh;
+  margin-top: 5vh;
   grid-area: bottomArea;
   text-align: center;
   font-family: "Inter";
@@ -145,8 +149,18 @@ html, body {
   font-size: 16px;
 }
 .homeFirst .homeFirst_bottomPart img {
-  width: 60px;
-  margin: 3vh 2vw;
+  width: 80px;
+  margin: 1vh 2vw;
+}
+
+.homeSecond {
+  background-color: white;
+  border-radius: 30px;
+  padding-left: 5vw;
+}
+.homeSecond h2 {
+  font-family: "Poppins";
+  font-size: 48px;
 }
 
 /*# sourceMappingURL=style.css.map */
