@@ -44,12 +44,12 @@ html, body {
   margin-right: 3vw;
   cursor: pointer;
 }
-.header .header_Menu li:hover {
-  color: #2f63f4;
-}
 .header .header_Menu li a {
   text-decoration: none;
   color: #262626;
+}
+.header .header_Menu li a:hover {
+  color: #2f63f4;
 }
 .header .header_Menu .active {
   color: #2f63f4;
@@ -87,7 +87,7 @@ html, body {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-areas: "leftArea rightArea" "bottomArea bottomArea";
-  padding: 10vh 0;
+  padding: 8vh 0;
 }
 .homeFirst .homeFirst_leftPart {
   grid-area: leftArea;
@@ -141,7 +141,7 @@ html, body {
   width: 100%;
 }
 .homeFirst .homeFirst_bottomPart {
-  margin-top: 5vh;
+  margin-top: 7vh;
   grid-area: bottomArea;
   text-align: center;
   font-family: "Inter";
@@ -156,11 +156,78 @@ html, body {
 .homeSecond {
   background-color: white;
   border-radius: 30px;
-  padding-left: 5vw;
+  padding: 10vh 0 10vh 7vw;
+  color: #030303;
+  box-shadow: 0 0 50px lightgray;
+  display: grid;
+  grid-template-columns: 35% 60%;
+  grid-template-areas: "topLeftArea rightArea" "midLeftArea rightArea" "botLeftArea rightArea";
+  margin-bottom: 10vh;
 }
 .homeSecond h2 {
+  grid-area: topLeftArea;
   font-family: "Poppins";
-  font-size: 48px;
+  font-size: 44px;
+  margin: 0;
+  line-height: 48px;
+}
+.homeSecond p {
+  grid-area: midLeftArea;
+  font-family: "Inter";
+  font-size: 18px;
+  line-height: 24px;
+}
+.homeSecond button {
+  grid-area: botLeftArea;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #2f63f4;
+  border-radius: 10px;
+  border: solid 1px #2f63f4;
+  padding: 2vh 2vw;
+  color: white;
+  margin-top: 1vh;
+  cursor: pointer;
+  width: 12vw;
+}
+.homeSecond button:hover {
+  background-color: white;
+  color: #2f63f4;
+}
+.homeSecond .homeSecond_rightImage {
+  grid-area: rightArea;
+  width: 60%;
+  align-self: center;
+  justify-self: center;
+}
+
+hr {
+  color: lightgray;
+  border: solid 1px lightgray;
+}
+
+.footer {
+  margin: 5vh 0;
+  display: flex;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 14px;
+  justify-content: space-between;
+  color: #262626;
+}
+.footer .footer_Logo img {
+  width: 60px;
+}
+.footer .footer_Logo p {
+  font-weight: 400;
+}
+.footer li {
+  list-style-type: none;
+}
+.footer li a {
+  text-decoration: none;
+  color: #262626;
 }
 
 /*# sourceMappingURL=style.css.map */

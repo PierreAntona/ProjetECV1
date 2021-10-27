@@ -29,13 +29,13 @@ html, body {
             margin-right: 3vw;
             cursor: pointer;
 
-            &:hover {
-                color: $blue;
-            }
-
             a {
                 text-decoration: none;
                 color: $blackMenu;
+
+                &:hover {
+                    color: $blue;
+                }
             }
         }
 
@@ -85,7 +85,7 @@ html, body {
     grid-template-areas: 
     "leftArea rightArea"
     "bottomArea bottomArea";
-    padding: 10vh 0;
+    padding: 8vh 0;
 
     .homeFirst_leftPart {
         grid-area: leftArea;
@@ -148,7 +148,7 @@ html, body {
     }
 
     .homeFirst_bottomPart {
-        margin-top: 5vh;
+        margin-top: 7vh;
         grid-area: bottomArea;
         text-align: center;
         font-family: 'Inter';
@@ -165,10 +165,92 @@ html, body {
 .homeSecond {
     background-color: white;
     border-radius: 30px;
-    padding-left: 5vw;
+    padding: 10vh 0 10vh 7vw;
+    color: $black;
+    box-shadow: 0 0 50px lightgray;
+    display: grid;
+    grid-template-columns: 35% 60%;
+    grid-template-areas: 
+    "topLeftArea rightArea"
+    "midLeftArea rightArea"
+    "botLeftArea rightArea";
+
+
+    margin-bottom: 10vh;
 
     h2 {
+        grid-area: topLeftArea;
         font-family: 'Poppins';
-        font-size: 48px;
+        font-size: 44px;
+        margin: 0;
+        line-height: 48px;
+    }
+
+    p {
+        grid-area: midLeftArea;
+        font-family: 'Inter';
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    button {
+            grid-area: botLeftArea;
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 16px;
+            background-color: $blue;
+            border-radius: 10px;
+            border: solid 1px $blue;
+            padding: 2vh 2vw;
+            color: white;
+            margin-top: 1vh;
+            cursor: pointer;
+            width: 12vw;
+
+            &:hover {
+                background-color: white;
+                color: $blue;
+            }
+        }
+
+    .homeSecond_rightImage {
+        grid-area: rightArea;
+        width: 60%;
+        align-self: center;
+        justify-self: center;
+    }
+}
+
+hr {
+    color : lightgray;
+    border: solid 1px lightgray;
+}
+
+.footer {
+    margin: 5vh 0;
+    display: flex;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 14px;
+    justify-content: space-between;
+    color: $blackMenu;
+
+    .footer_Logo {
+        img {
+            width: 60px;
+        }
+        p {
+
+            font-weight: 400;
+        }
+    }
+
+    li {
+        list-style-type: none;
+
+        a {
+            text-decoration: none;
+            color: $blackMenu;
+        }
     }
 }
