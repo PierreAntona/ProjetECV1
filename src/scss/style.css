@@ -16,10 +16,33 @@
   font-weight: 600;
   font-style: normal;
 }
-html, body {
+html,
+body {
   margin: 0 4vw;
   padding: 0;
   background-color: #ededed;
+}
+html h2,
+body h2 {
+  grid-area: topLeftArea;
+  font-family: "Poppins";
+  font-size: 44px;
+  margin: 0;
+  line-height: 48px;
+}
+html p,
+body p {
+  font-family: "Inter";
+  font-size: 18px;
+  line-height: 24px;
+}
+html span,
+body span {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #7f7f7f;
 }
 
 .header {
@@ -93,22 +116,11 @@ html, body {
   grid-area: leftArea;
   color: #030303;
 }
-.homeFirst .homeFirst_leftPart span {
-  font-family: "Inter";
-  font-weight: 600;
-  font-size: 16px;
-  letter-spacing: 2px;
-  color: #7f7f7f;
-}
 .homeFirst .homeFirst_leftPart h1 {
   font-family: "Poppins";
   font-size: 75px;
   line-height: 1em;
   margin: 20px 20px 40px 0px;
-}
-.homeFirst .homeFirst_leftPart p {
-  font-family: "Inter";
-  font-size: 18px;
 }
 .homeFirst .homeFirst_leftPart button {
   font-family: "Inter";
@@ -162,20 +174,10 @@ html, body {
   display: grid;
   grid-template-columns: 35% 60%;
   grid-template-areas: "topLeftArea rightArea" "midLeftArea rightArea" "botLeftArea rightArea";
-  margin-bottom: 10vh;
-}
-.homeSecond h2 {
-  grid-area: topLeftArea;
-  font-family: "Poppins";
-  font-size: 44px;
-  margin: 0;
-  line-height: 48px;
+  margin-bottom: 15vh;
 }
 .homeSecond p {
   grid-area: midLeftArea;
-  font-family: "Inter";
-  font-size: 18px;
-  line-height: 24px;
 }
 .homeSecond button {
   grid-area: botLeftArea;
@@ -207,13 +209,95 @@ hr {
   border: solid 1px lightgray;
 }
 
+.homeThird {
+  display: grid;
+  grid-template-columns: 50% 40%;
+  grid-template-areas: "leftArea topArea" "leftArea topMidArea" "leftArea botMidArea" "leftArea botArea";
+  margin: 0 0 15vh 10%;
+}
+.homeThird img {
+  grid-area: leftArea;
+  width: 70%;
+}
+.homeThird span {
+  grid-area: topArea;
+}
+.homeThird h2 {
+  grid-area: topMidArea;
+}
+.homeThird p {
+  grid-area: botMidArea;
+}
+.homeThird button {
+  grid-area: botArea;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #2f63f4;
+  border-radius: 10px;
+  border: solid 1px #2f63f4;
+  padding: 2vh 2vw;
+  color: white;
+  margin-top: 1vh;
+  cursor: pointer;
+  width: 12vw;
+}
+.homeThird button:hover {
+  background-color: #ededed;
+  color: #2f63f4;
+}
+
+.homeTesti {
+  text-align: center;
+  color: #030303;
+}
+.homeTesti .homeTesti_cards {
+  display: flex;
+  justify-content: space-between;
+}
+.homeTesti .homeTesti_cards .homeTesti_card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2vh 4vw;
+  margin: 6vh auto;
+  width: 16vw;
+}
+.homeTesti .homeTesti_cards .homeTesti_card .homeTesti_comment,
+.homeTesti .homeTesti_cards .homeTesti_card .homeTesti_name {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 22px;
+}
+.homeTesti .homeTesti_cards .homeTesti_card .homeTesti_rating {
+  display: flex;
+  justify-content: center;
+}
+.homeTesti .homeTesti_cards .homeTesti_card .homeTesti_rating svg {
+  width: 1.4vw;
+  fill: #2f63f4;
+  padding: 0 0.2vw;
+}
+.homeTesti .homeTesti_cards .homeTesti_card .homeTesti_job {
+  font-size: 12px;
+  color: #262626;
+  margin-top: -16px;
+}
+.homeTesti .homeTesti_cards .homeTesti_card:nth-of-type(2) {
+  position: relative;
+  top: -2vh;
+}
+
+.pricingFirst h1 {
+  color: red;
+}
+
 .footer {
   margin: 5vh 0;
   display: flex;
+  justify-content: space-around;
   font-family: "Inter";
   font-weight: 600;
   font-size: 14px;
-  justify-content: space-between;
   color: #262626;
 }
 .footer .footer_Logo img {
@@ -222,12 +306,19 @@ hr {
 .footer .footer_Logo p {
   font-weight: 400;
 }
-.footer li {
-  list-style-type: none;
+.footer ul {
+  margin: 0;
 }
-.footer li a {
+.footer ul li {
+  list-style-type: none;
+  padding-bottom: 2.5vh;
+}
+.footer ul li a {
   text-decoration: none;
   color: #262626;
+}
+.footer ul li a:hover {
+  color: #2f63f4;
 }
 
 /*# sourceMappingURL=style.css.map */

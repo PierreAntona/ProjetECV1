@@ -1,256 +1,361 @@
 @import "./config/globals.scss";
 
-html, body {
-    margin: 0 4vw;
-    padding: 0;
-    background-color: $bg;
+html,
+body {
+  margin: 0 4vw;
+  padding: 0;
+  background-color: $bg;
+
+  h2 {
+    grid-area: topLeftArea;
+    font-family: "Poppins";
+    font-size: 44px;
+    margin: 0;
+    line-height: 48px;
+  }
+
+  p {
+    font-family: "Inter";
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  span {
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: $grey;
+  }
 }
 
 .header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 4.5vh 0;
+  font-family: "Inter";
+  font-size: 0.9em;
+  font-weight: 600;
+  color: $blackMenu;
+
+  .header_Logo {
+    width: 100px;
+  }
+
+  .header_Menu {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 4.5vh 0;
-    font-family: 'Inter';
-    font-size: 0.9em;
-    font-weight: 600;
-    color: $blackMenu;
+    margin: 0 0 0 4vw;
 
-    .header_Logo {
-        width: 100px;
+    li {
+      list-style-type: none;
+      margin-right: 3vw;
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+        color: $blackMenu;
+
+        &:hover {
+          color: $blue;
+        }
+      }
     }
 
-    .header_Menu {
-        display: flex;
-        margin: 0 0 0 4vw;
-
-        li {
-            list-style-type: none;
-            margin-right: 3vw;
-            cursor: pointer;
-
-            a {
-                text-decoration: none;
-                color: $blackMenu;
-
-                &:hover {
-                    color: $blue;
-                }
-            }
-        }
-
-        .active {
-            color: $blue;
-        }
+    .active {
+      color: $blue;
     }
+  }
 
-    .header_Button {
+  .header_Button {
+    position: absolute;
+    right: 8vw;
 
-        position: absolute;
-        right: 8vw;
-        
-        button {
-            text-decoration: none;
-            border: none;
-            background-color: $bg;
-            font-family: 'Inter';
-            font-weight: 600;
-            font-size: 0.9em;
-            cursor: pointer;
+    button {
+      text-decoration: none;
+      border: none;
+      background-color: $bg;
+      font-family: "Inter";
+      font-weight: 600;
+      font-size: 0.9em;
+      cursor: pointer;
 
-            &:hover {
-                color: $blue;
-            }
+      &:hover {
+        color: $blue;
+      }
 
-            &:last-of-type {
-                background-color: $blue;
-                color: white;
-                padding: 2vh 2vw;
-                margin-left: 2vw;
-                border-radius: 10px;
-                border: solid 1px $blue;
+      &:last-of-type {
+        background-color: $blue;
+        color: white;
+        padding: 2vh 2vw;
+        margin-left: 2vw;
+        border-radius: 10px;
+        border: solid 1px $blue;
 
-                &:hover {
-                    background-color: $bg;
-                    color: $blue;
-                }
-            }
+        &:hover {
+          background-color: $bg;
+          color: $blue;
         }
+      }
     }
+  }
 }
 
 .homeFirst {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: 
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
     "leftArea rightArea"
     "bottomArea bottomArea";
-    padding: 8vh 0;
+  padding: 8vh 0;
 
-    .homeFirst_leftPart {
-        grid-area: leftArea;
-        color: $black;
-        
-        span {
-            font-family: 'Inter';
-            font-weight: 600;
-            font-size: 16px;
-            letter-spacing: 2px;
-            color: $grey;
-        }
+  .homeFirst_leftPart {
+    grid-area: leftArea;
+    color: $black;
 
-        h1 {
-            font-family: 'Poppins';
-            font-size: 75px;
-            line-height: 1em;
-            margin: 20px 20px 40px 0px;
-        }
-
-        p {
-            font-family: 'Inter';
-            font-size: 18px;
-        }
-
-        button {
-            font-family: 'Inter';
-            font-weight: 400;
-            font-size: 16px;
-            background-color: $blue;
-            border-radius: 10px;
-            border: solid 1px $blue;
-            padding: 2vh 2vw;
-            color: white;
-            margin-top: 3vh;
-            cursor: pointer;
-
-            &:hover {
-                background-color: $bg;
-                color: $blue;
-
-                &:last-of-type {
-                    background-color: $black;
-                    color: white;
-                }
-            }
-
-            &:last-of-type {
-                border-color: black;
-                background-color: $bg;
-                color: $black;
-                margin-left: 2vw;
-            }
-        }
+    h1 {
+      font-family: "Poppins";
+      font-size: 75px;
+      line-height: 1em;
+      margin: 20px 20px 40px 0px;
     }
+
+    button {
+      font-family: "Inter";
+      font-weight: 400;
+      font-size: 16px;
+      background-color: $blue;
+      border-radius: 10px;
+      border: solid 1px $blue;
+      padding: 2vh 2vw;
+      color: white;
+      margin-top: 3vh;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $bg;
+        color: $blue;
+
+        &:last-of-type {
+          background-color: $black;
+          color: white;
+        }
+      }
+
+      &:last-of-type {
+        border-color: black;
+        background-color: $bg;
+        color: $black;
+        margin-left: 2vw;
+      }
+    }
+  }
+
+  img {
+    grid-area: rightArea;
+    width: 100%;
+  }
+
+  .homeFirst_bottomPart {
+    margin-top: 7vh;
+    grid-area: bottomArea;
+    text-align: center;
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 16px;
 
     img {
-        grid-area: rightArea;
-        width: 100% ;
+      width: 80px;
+      margin: 1vh 2vw;
     }
-
-    .homeFirst_bottomPart {
-        margin-top: 7vh;
-        grid-area: bottomArea;
-        text-align: center;
-        font-family: 'Inter';
-        font-weight: 600;
-        font-size: 16px;
-
-        img {
-            width: 80px;
-            margin: 1vh 2vw
-        }
-    }
+  }
 }
 
 .homeSecond {
-    background-color: white;
-    border-radius: 30px;
-    padding: 10vh 0 10vh 7vw;
-    color: $black;
-    box-shadow: 0 0 50px lightgray;
-    display: grid;
-    grid-template-columns: 35% 60%;
-    grid-template-areas: 
+  background-color: white;
+  border-radius: 30px;
+  padding: 10vh 0 10vh 7vw;
+  color: $black;
+  box-shadow: 0 0 50px lightgray;
+  display: grid;
+  grid-template-columns: 35% 60%;
+  grid-template-areas:
     "topLeftArea rightArea"
     "midLeftArea rightArea"
     "botLeftArea rightArea";
 
+  margin-bottom: 15vh;
 
-    margin-bottom: 10vh;
+  p {
+    grid-area: midLeftArea;
+  }
 
-    h2 {
-        grid-area: topLeftArea;
-        font-family: 'Poppins';
-        font-size: 44px;
-        margin: 0;
-        line-height: 48px;
+  button {
+    grid-area: botLeftArea;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 16px;
+    background-color: $blue;
+    border-radius: 10px;
+    border: solid 1px $blue;
+    padding: 2vh 2vw;
+    color: white;
+    margin-top: 1vh;
+    cursor: pointer;
+    width: 12vw;
+
+    &:hover {
+      background-color: white;
+      color: $blue;
     }
+  }
 
-    p {
-        grid-area: midLeftArea;
-        font-family: 'Inter';
-        font-size: 18px;
-        line-height: 24px;
-    }
-
-    button {
-            grid-area: botLeftArea;
-            font-family: 'Inter';
-            font-weight: 400;
-            font-size: 16px;
-            background-color: $blue;
-            border-radius: 10px;
-            border: solid 1px $blue;
-            padding: 2vh 2vw;
-            color: white;
-            margin-top: 1vh;
-            cursor: pointer;
-            width: 12vw;
-
-            &:hover {
-                background-color: white;
-                color: $blue;
-            }
-        }
-
-    .homeSecond_rightImage {
-        grid-area: rightArea;
-        width: 60%;
-        align-self: center;
-        justify-self: center;
-    }
+  .homeSecond_rightImage {
+    grid-area: rightArea;
+    width: 60%;
+    align-self: center;
+    justify-self: center;
+  }
 }
 
 hr {
-    color : lightgray;
-    border: solid 1px lightgray;
+  color: lightgray;
+  border: solid 1px lightgray;
+}
+
+.homeThird {
+  display: grid;
+  grid-template-columns: 50% 40%;
+  grid-template-areas:
+    "leftArea topArea"
+    "leftArea topMidArea"
+    "leftArea botMidArea"
+    "leftArea botArea";
+  margin: 0 0 15vh 10%;
+
+  img {
+    grid-area: leftArea;
+    width: 70%;
+  }
+
+  span {
+    grid-area: topArea;
+  }
+
+  h2 {
+    grid-area: topMidArea;
+  }
+
+  p {
+    grid-area: botMidArea;
+  }
+
+  button {
+    grid-area: botArea;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 16px;
+    background-color: $blue;
+    border-radius: 10px;
+    border: solid 1px $blue;
+    padding: 2vh 2vw;
+    color: white;
+    margin-top: 1vh;
+    cursor: pointer;
+    width: 12vw;
+
+    &:hover {
+      background-color: $bg;
+      color: $blue;
+    }
+  }
+}
+
+.homeTesti {
+  text-align: center;
+  color: $black;
+
+  .homeTesti_cards {
+    display: flex;
+    justify-content: space-between;
+
+    .homeTesti_card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 2vh 4vw;
+      margin: 6vh auto;
+      width: 16vw;
+
+      .homeTesti_comment,
+      .homeTesti_name {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 22px;
+      }
+
+      .homeTesti_rating {
+        display: flex;
+        justify-content: center;
+        svg {
+          width: 1.4vw;
+          fill: $blue;
+          padding: 0 0.2vw;
+        }
+      }
+
+      .homeTesti_job {
+        font-size: 12px;
+        color: $blackMenu;
+        margin-top: -16px;
+      }
+
+      &:nth-of-type(2) {
+        position: relative;
+        top: -2vh;
+      }
+    }
+  }
+}
+
+.pricingFirst {
+  h1 {
+    color: red;
+  }
 }
 
 .footer {
-    margin: 5vh 0;
-    display: flex;
-    font-family: 'Inter';
-    font-weight: 600;
-    font-size: 14px;
-    justify-content: space-between;
-    color: $blackMenu;
+  margin: 5vh 0;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 14px;
+  color: $blackMenu;
 
-    .footer_Logo {
-        img {
-            width: 60px;
-        }
-        p {
-
-            font-weight: 400;
-        }
+  .footer_Logo {
+    img {
+      width: 60px;
     }
+    p {
+      font-weight: 400;
+    }
+  }
+
+  ul {
+    margin: 0;
 
     li {
-        list-style-type: none;
+      list-style-type: none;
+      padding-bottom: 2.5vh;
 
-        a {
-            text-decoration: none;
-            color: $blackMenu;
+      a {
+        text-decoration: none;
+        color: $blackMenu;
+
+        &:hover {
+          color: $blue;
         }
+      }
     }
+  }
 }

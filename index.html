@@ -1,84 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/scss/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/scss/style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <img class="header_Logo" src="./src/assets/img/logo.png" alt="Logo Lando" />
-        <nav>
-            <ul class="header_Menu">
-                <li class="active">Home</li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header_Button">
-            <button>Log in</button>
-            <button>Sign up</button>
-        </div>
+      <img
+        class="header_Logo"
+        src="./src/assets/img/logo.png"
+        alt="Logo Lando"
+      />
+      <nav>
+        <ul class="header_Menu">
+          <li class="active">Home</li>
+          <li><a href="./src/pages/pricing.html">Pricing</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header_Button">
+        <button>Log in</button>
+        <button>Sign up</button>
+      </div>
     </header>
-    
+
     <main>
-        <section class="homeFirst">
-            <div class="homeFirst_leftPart">
-                <span>- FREE 30 DAYS TRIAL</span>
-                <h1>The best way to showcase your project.</h1>
-                <p>Here you can put a short description about your project.</p>
-                <button>Try for free</button>
-                <button>See how it works</button>
+      <section class="homeFirst">
+        <div class="homeFirst_leftPart">
+          <span>- FREE 30 DAYS TRIAL</span>
+          <h1>The best way to showcase your project.</h1>
+          <p>Here you can put a short description about your project.</p>
+          <button>Try for free</button>
+          <button>See how it works</button>
+        </div>
+        <img src="./src/assets/img/page1img1.svg" alt="" />
+        <div class="homeFirst_bottomPart">
+          <p>
+            Trusted by individuals and teams at the world's<br />best companies
+          </p>
+          <img src="./src/assets/img/Dior_logo.svg" alt="Logo Dior" />
+          <img src="./src/assets/img/UEFA_logo.svg" alt="Logo UEFA" />
+          <img src="./src/assets/img/Burberry_logo.svg" alt="Logo Burberry" />
+          <img
+            src="./src/assets/img/Universal_Pictures_logo.svg"
+            alt="Logo Universal Pictures"
+          />
+          <img src="./src/assets/img/Chanel_logo.svg" alt="Logo Chanel" />
+          <img src="./src/assets/img/Maserati_logo.svg" alt="Logo Maserati" />
+        </div>
+      </section>
+      <section class="homeSecond">
+        <h2>Some very nice headline</h2>
+        <p>
+          Here you can put a short description providing more context for the
+          headline
+        </p>
+        <button>Try for free</button>
+        <img
+          class="homeSecond_rightImage"
+          src="./src/assets/img/page1img2.svg"
+          alt=""
+        />
+      </section>
+      <section class="homeThird">
+        <img src="./src/assets/img/page1img3.svg" alt="" />
+        <span>FEATURE NAME</span>
+        <h2>Explain the value of the first feature</h2>
+        <p>
+          This is a text block to let you write more information about this
+          feature and why it's going to help people so much. Write something
+          meaningful and concise.
+        </p>
+        <button>Button</button>
+      </section>
+      <section class="homeFourth"></section>
+      <section class="homeTesti">
+        <h2>Testimonials</h2>
+        <p>People love what we do and we want to let you know</p>
+        <div class="homeTesti_cards">
+          <div class="homeTesti_card">
+            <p class="homeTesti_comment">
+              "This product is so cool and create so much value bla bla bla bla"
+            </p>
+            <div class="homeTesti_rating">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g data-name="Layer 2">
+                  <g data-name="star">
+                    <rect
+                      width="24"
+                      height="24"
+                      transform="rotate(90 12 12)"
+                      opacity="0"
+                    />
+                    <path
+                      d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g data-name="Layer 2">
+                  <g data-name="star">
+                    <rect
+                      width="24"
+                      height="24"
+                      transform="rotate(90 12 12)"
+                      opacity="0"
+                    />
+                    <path
+                      d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g data-name="Layer 2">
+                  <g data-name="star">
+                    <rect
+                      width="24"
+                      height="24"
+                      transform="rotate(90 12 12)"
+                      opacity="0"
+                    />
+                    <path
+                      d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g data-name="Layer 2">
+                  <g data-name="star">
+                    <rect
+                      width="24"
+                      height="24"
+                      transform="rotate(90 12 12)"
+                      opacity="0"
+                    />
+                    <path
+                      d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g data-name="Layer 2">
+                  <g data-name="star">
+                    <rect
+                      width="24"
+                      height="24"
+                      transform="rotate(90 12 12)"
+                      opacity="0"
+                    />
+                    <path
+                      d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"
+                    />
+                  </g>
+                </g>
+              </svg>
             </div>
-            <img src="./src/assets/img/page1img1.svg" alt="" />
-            <div class="homeFirst_bottomPart">
-                <p>Trusted by individuals and teams at the world's<br />best companies</p>
-                <img src="./src/assets/img/Dior_logo.svg" alt="Logo Dior">
-                <img src="./src/assets/img/UEFA_logo.svg" alt="Logo UEFA">
-                <img src="./src/assets/img/Burberry_logo.svg" alt="Logo Burberry">
-                <img src="./src/assets/img/Universal_Pictures_logo.svg" alt="Logo Universal Pictures">
-                <img src="./src/assets/img/Chanel_logo.svg" alt="Logo Chanel">
-                <img src="./src/assets/img/Maserati_logo.svg" alt="Logo Maserati">
+            <p class="homeTesti_name">Aphiar Ivius</p>
+            <p class="homeTesti_job">Lead Wizard at Hogwards</p>
+          </div>
+          <div class="homeTesti_card">
+            <p class="homeTesti_comment">
+              "This product is so cool and create so much value bla bla bla bla"
+            </p>
+            <div class="homeTesti_rating">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g data-name="Layer 2">
+                  <g data-name="star">
+                    <rect
+                      width="24"
+                      height="24"
+                      transform="rotate(90 12 12)"
+                      opacity="0"
+                    />
+                    <path
+                      d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g data-name="Layer 2">
+                  <g data-name="star">
+                    <rect
+                      width="24"
+                      height="24"
+                      transform="rotate(90 12 12)"
+                      opacity="0"
+                    />
+                    <path
+                      d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g data-name="Layer 2">
+                  <g data-name="star">
+                    <rect
+                      width="24"
+                      height="24"
+                      transform="rotate(90 12 12)"
+                      opacity="0"
+                    />
+                    <path
+                      d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g data-name="Layer 2">
+                  <g data-name="star">
+                    <rect
+                      width="24"
+                      height="24"
+                      transform="rotate(90 12 12)"
+                      opacity="0"
+                    />
+                    <path
+                      d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g data-name="Layer 2">
+                  <g data-name="star">
+                    <rect
+                      width="24"
+                      height="24"
+                      transform="rotate(90 12 12)"
+                      opacity="0"
+                    />
+                    <path
+                      d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"
+                    />
+                  </g>
+                </g>
+              </svg>
             </div>
-        </section>
-        <section class="homeSecond">
-            <h2>Some very nice headline</h2>
-            <p>Here you can put a short description providing more context for the headline</p>
-            <button>Try for free</button>
-            <img class="homeSecond_rightImage" src="./src/assets/img/page1img2.svg" alt="" />
-        </section>
+            <p class="homeTesti_name">Aphiar Ivius</p>
+            <p class="homeTesti_job">Lead Wizard at Hogwards</p>
+          </div>
+          <div class="homeTesti_card">
+            <p class="homeTesti_comment">
+              "This product is so cool and create so much value bla bla bla bla"
+            </p>
+            <div class="homeTesti_rating">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g data-name="Layer 2">
+                  <g data-name="star">
+                    <rect
+                      width="24"
+                      height="24"
+                      transform="rotate(90 12 12)"
+                      opacity="0"
+                    />
+                    <path
+                      d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g data-name="Layer 2">
+                  <g data-name="star">
+                    <rect
+                      width="24"
+                      height="24"
+                      transform="rotate(90 12 12)"
+                      opacity="0"
+                    />
+                    <path
+                      d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g data-name="Layer 2">
+                  <g data-name="star">
+                    <rect
+                      width="24"
+                      height="24"
+                      transform="rotate(90 12 12)"
+                      opacity="0"
+                    />
+                    <path
+                      d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g data-name="Layer 2">
+                  <g data-name="star">
+                    <rect
+                      width="24"
+                      height="24"
+                      transform="rotate(90 12 12)"
+                      opacity="0"
+                    />
+                    <path
+                      d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g data-name="Layer 2">
+                  <g data-name="star">
+                    <rect
+                      width="24"
+                      height="24"
+                      transform="rotate(90 12 12)"
+                      opacity="0"
+                    />
+                    <path
+                      d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <p class="homeTesti_name">Aphiar Ivius</p>
+            <p class="homeTesti_job">Lead Wizard at Hogwards</p>
+          </div>
+        </div>
+      </section>
     </main>
     <hr />
     <footer class="footer">
-        <div class="footer_Logo">
-            <img src="./src/assets/img/logo.png" alt="Logo Lando" />
-            <p>2021 © Lando<br />All rights reserved</p>
-        </div>
-        <div class="footer_Menu">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Pricing</a></li>
-                <li><a href="">About us</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </div>
-        <div class="footer_Socials">
-            <ul>
-                <li><a href="">Facebook</a></li>
-                <li><a href="">Instagram</a></li>
-                <li><a href="">Twitter</a></li>
-                <li><a href="">Linkedin</a></li>
-            </ul>
-        </div>
-        <div class="footer_Legals">
-            <ul>
-                <li><a href="">Privacy Policy</a></li>
-                <li><a href="">Terms Of Service</a></li>
-            </ul>
-        </div>
+      <div class="footer_Logo">
+        <img src="./src/assets/img/logo.png" alt="Logo Lando" />
+        <p>2021 © Lando<br />All rights reserved</p>
+      </div>
+      <div class="footer_Menu">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Pricing</a></li>
+          <li><a href="">About us</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer_Socials">
+        <ul>
+          <li><a href="">Facebook</a></li>
+          <li><a href="">Instagram</a></li>
+          <li><a href="">Twitter</a></li>
+          <li><a href="">Linkedin</a></li>
+        </ul>
+      </div>
+      <div class="footer_Legals">
+        <ul>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Terms Of Service</a></li>
+        </ul>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
