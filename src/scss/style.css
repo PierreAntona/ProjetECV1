@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Poppins";
   src: url("../../src/assets/font/Poppins-Medium.ttf") format("truetype");
@@ -287,8 +288,155 @@ hr {
   top: -2vh;
 }
 
-.pricingFirst h1 {
-  color: red;
+.pricingFirst {
+  margin-top: 70px;
+  text-align: center;
+}
+.pricingFirst h2 {
+  text-align: center;
+}
+.pricingFirst .pricingFirst_Cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+.pricingFirst .pricingFirst_Cards .pricingFirst_Card {
+  text-align: left;
+  background-color: white;
+  border-radius: 20px;
+  padding: 40px 30px;
+  width: 22%;
+}
+.pricingFirst .pricingFirst_Cards .pricingFirst_Card .pricingFirst_Type {
+  font-size: 16px;
+  font-weight: bold;
+}
+.pricingFirst .pricingFirst_Cards .pricingFirst_Card .pricingFirst_Price {
+  font-size: 16px;
+}
+.pricingFirst .pricingFirst_Cards .pricingFirst_Card .pricingFirst_Price span {
+  color: #030303;
+  font-size: 20px;
+}
+.pricingFirst .pricingFirst_Cards .pricingFirst_Card .pricingFirst_Price span:first-of-type {
+  position: relative;
+  bottom: 17px;
+}
+.pricingFirst .pricingFirst_Cards .pricingFirst_Card .pricingFirst_Price span:last-of-type {
+  font-size: 48px;
+}
+.pricingFirst .pricingFirst_Cards .pricingFirst_Card:first-of-type {
+  padding: 10px 30px;
+  height: 300px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.pricingFirst .pricingFirst_Cards .pricingFirst_Card:last-of-type {
+  padding: 10px 30px;
+  height: 300px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.pricingFirst .pricingFirst_Cards .pricingFirst_Card .pricingFirst_Popular {
+  font-size: 14px;
+  font-weight: lighter;
+  color: white;
+  background-color: #2f63f4;
+  padding: 5px 20px;
+  border-radius: 20px;
+  letter-spacing: normal;
+}
+.pricingFirst .pricingFirst_Cards button {
+  grid-area: botArea;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #2f63f4;
+  border-radius: 10px;
+  border: solid 1px #2f63f4;
+  padding: 2vh 1vw;
+  color: white;
+  margin-top: 5vh;
+  cursor: pointer;
+  width: 100%;
+}
+.pricingFirst .pricingFirst_Cards button:hover {
+  background-color: white;
+  color: #2f63f4;
+}
+.pricingFirst .pricingFirst_Cards .pricingFirst_Blackbutton {
+  background-color: #fff;
+  color: #030303;
+  border-color: #030303;
+}
+.pricingFirst .pricingFirst_Cards .pricingFirst_Blackbutton:hover {
+  color: white;
+  background-color: #030303;
+}
+
+.pricingSecond {
+  font-family: "Inter";
+  color: #030303;
+}
+.pricingSecond h4 {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  margin: 60px 0 20px 0;
+}
+.pricingSecond h5 {
+  font-size: 22px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.pricingSecond .pricingSecond_Features {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+.pricingSecond .pricingSecond_Features .pricingSecond_Featureslist {
+  width: 26%;
+}
+.pricingSecond .pricingSecond_Features .pricingSecond_Featureslist ul {
+  margin-top: 30px;
+  padding-left: 0;
+}
+.pricingSecond .pricingSecond_Features .pricingSecond_Featureslist ul li {
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  list-style-type: none;
+  padding: 0 20px;
+}
+.pricingSecond .pricingSecond_Features .pricingSecond_Featureslist ul li::before {
+  display: inline-block;
+  content: "✓";
+  font-size: 20px;
+  line-height: 35px;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 20px;
+  transform: translate(-15px, 2px);
+  background-color: #2f63f4;
+  color: white;
+}
+.pricingSecond .pricingSecond_Features .pricingSecond_Featureslist ul .not::before {
+  content: "✗";
+  background-color: red;
+}
+
+.pricingFAQ {
+  margin: 60px 0 0 0;
+  text-align: center;
+}
+.pricingFAQ img {
+  width: 35%;
+}
+.pricingFAQ h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 35px;
 }
 
 .footer {
