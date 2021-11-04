@@ -41,6 +41,9 @@ body {
 
   .header_Logo {
     width: 100px;
+    @include mobile {
+      margin: auto;
+    }
   }
 
   .header_Menu {
@@ -65,11 +68,19 @@ body {
     .active {
       color: $blue;
     }
+
+    @include mobile {
+      display: none;
+    }
   }
 
   .header_Button {
     position: absolute;
     right: 8vw;
+
+    @include mobile {
+      display: none;
+    }
 
     button {
       text-decoration: none;
@@ -99,6 +110,94 @@ body {
       }
     }
   }
+  .header_BurgerMenu {
+    display: none;
+    @include mobile {
+      display: initial;
+    }
+    .header_Burger {
+      position: absolute;
+      right: 20px;
+      top: 5vh;
+      cursor: pointer;
+    }
+    .header_BurgerPage {
+      position: absolute;
+      transform: translateY(-100%);
+      transition: transform 0s ease-in;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $bg;
+      color: $blackMenu;
+      list-style: none;
+      z-index: 9999;
+      .header_BurgerLogo {
+        display: none;
+      }
+    }
+    .show_header_BurgerPage {
+      position: absolute;
+      transform: translateY(0);
+      transition: transform 0.6s ease-in;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: $bg;
+      color: $blackMenu;
+      list-style: none;
+      z-index: 9999;
+      font-family: "Inter", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      text-align: center;
+      .header_BurgerLogo {
+        display: initial;
+        width: 120px;
+        margin: 30px auto;
+      }
+      .header_BurgerClose {
+        position: absolute;
+        font-size: 34px;
+        right: 20px;
+        top: 30px;
+        cursor: pointer;
+      }
+      ul {
+        padding-left: 0;
+        li {
+          list-style-type: none;
+          color: $black;
+          padding-bottom: 30px;
+          a {
+            text-decoration: none;
+            color: $black;
+          }
+        }
+        .active {
+          color: $blue;
+        }
+      }
+      .header_BurgerButton {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20%;
+        button {
+          background-color: $blue;
+          border-radius: 10px;
+          border: solid 1px $blue;
+          padding: 1.4vh 1vw;
+          color: white;
+          margin: 3vh auto;
+          cursor: pointer;
+          width: 25vw;
+        }
+      }
+    }
+  }
 }
 
 .homeFirst {
@@ -109,6 +208,17 @@ body {
     "bottomArea bottomArea";
   padding: 8vh 0;
 
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    text-align: center;
+
+    br {
+      display: none;
+    }
+  }
+
   .homeFirst_leftPart {
     grid-area: leftArea;
     color: $black;
@@ -118,6 +228,10 @@ body {
       font-size: 75px;
       line-height: 1em;
       margin: 20px 20px 40px 0px;
+      @include mobile {
+        font-size: 44px;
+        margin: 20px 0;
+      }
     }
 
     button {
@@ -148,12 +262,21 @@ body {
         color: $black;
         margin-left: 2vw;
       }
+
+      @include mobile {
+        padding: 1.5vh 3vw;
+        font-size: 16px;
+      }
     }
   }
 
   img {
     grid-area: rightArea;
     width: 100%;
+
+    @include mobile {
+      padding: 10px 0 40px 0;
+    }
   }
 
   .homeFirst_bottomPart {
@@ -167,6 +290,16 @@ body {
     img {
       width: 80px;
       margin: 1vh 2vw;
+
+      @include mobile {
+        padding-bottom: 0;
+      }
+    }
+
+    @include mobile {
+      br {
+        display: none;
+      }
     }
   }
 }
@@ -186,6 +319,18 @@ body {
 
   margin-bottom: 15vh;
 
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    padding: 5vh 3vw;
+    text-align: center;
+    margin-bottom: 40px;
+    h2 {
+      font-size: 40px;
+      margin: 20px 10px;
+    }
+  }
+
   p {
     grid-area: midLeftArea;
   }
@@ -204,6 +349,11 @@ body {
     cursor: pointer;
     width: 12vw;
 
+    @include mobile {
+      width: 40vw;
+      margin: auto;
+    }
+
     &:hover {
       background-color: white;
       color: $blue;
@@ -215,6 +365,11 @@ body {
     width: 60%;
     align-self: center;
     justify-self: center;
+
+    @include mobile {
+      position: relative;
+      width: 80%;
+    }
   }
 }
 
@@ -233,17 +388,36 @@ hr {
     "leftArea botArea";
   margin: 0 0 15vh 10%;
 
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 40px auto;
+  }
+
   img {
     grid-area: leftArea;
     width: 70%;
+    @include mobile {
+      width: 80%;
+      margin: auto;
+    }
   }
 
   span {
     grid-area: topArea;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   h2 {
     grid-area: topMidArea;
+    @include mobile {
+      font-size: 36px;
+      margin: 20px 0;
+    }
   }
 
   p {
@@ -268,6 +442,10 @@ hr {
       background-color: $bg;
       color: $blue;
     }
+    @include mobile {
+      width: 40vw;
+      margin: 20px auto 40px auto;
+    }
   }
 }
 
@@ -279,12 +457,22 @@ hr {
     display: flex;
     justify-content: space-between;
 
+    @include mobile {
+      flex-direction: column;
+      margin-bottom: 50px;
+    }
+
     .homeTesti_card {
       background-color: white;
       border-radius: 10px;
       padding: 2vh 4vw;
       margin: 6vh auto;
       width: 16vw;
+
+      @include mobile {
+        width: 80%;
+        margin: 4vh auto 1vh auto;
+      }
 
       .homeTesti_comment,
       .homeTesti_name {
@@ -300,6 +488,10 @@ hr {
           width: 1.4vw;
           fill: $blue;
           padding: 0 0.2vw;
+
+          @include mobile {
+            width: 5vw;
+          }
         }
       }
 
@@ -312,6 +504,10 @@ hr {
       &:nth-of-type(2) {
         position: relative;
         top: -2vh;
+
+        @include mobile {
+          position: initial;
+        }
       }
     }
   }
@@ -320,6 +516,13 @@ hr {
 .pricingFirst {
   margin-top: 70px;
   text-align: center;
+
+  @include mobile {
+    br {
+      display: none;
+    }
+    margin-top: 40px;
+  }
 
   h2 {
     text-align: center;
@@ -330,12 +533,25 @@ hr {
     justify-content: center;
     align-items: center;
     margin: 40px 0;
+
+    @include mobile {
+      flex-direction: column;
+    }
     .pricingFirst_Card {
       text-align: left;
       background-color: white;
       border-radius: 20px;
       padding: 40px 30px;
       width: 22%;
+      @include mobile {
+        width: 80%;
+        margin: 30px;
+        text-align: center;
+        p {
+          width: 80%;
+          margin: 20px auto 20px auto;
+        }
+      }
       .pricingFirst_Type {
         font-size: 16px;
         font-weight: bold;
@@ -359,12 +575,18 @@ hr {
         height: 300px;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
+        @include mobile {
+          border-radius: 20px;
+        }
       }
       &:last-of-type {
         padding: 10px 30px;
         height: 300px;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
+        @include mobile {
+          border-radius: 20px;
+        }
       }
       .pricingFirst_Popular {
         font-size: 14px;
@@ -394,6 +616,9 @@ hr {
         background-color: white;
         color: $blue;
       }
+      @include mobile {
+        margin-top: 3vh;
+      }
     }
     .pricingFirst_Blackbutton {
       background-color: #fff;
@@ -415,20 +640,35 @@ hr {
     line-height: 28px;
     letter-spacing: 2px;
     margin: 60px 0 20px 0;
+    @include mobile {
+      text-align: center;
+    }
   }
   h5 {
     font-size: 22px;
     letter-spacing: 1px;
     margin-bottom: 20px;
     text-align: left;
+    @include mobile {
+      text-align: center;
+    }
   }
   .pricingSecond_Features {
     display: flex;
     justify-content: space-between;
     text-align: left;
 
+    @include mobile {
+      flex-direction: column;
+      text-align: center;
+    }
+
     .pricingSecond_Featureslist {
       width: 26%;
+      @include mobile {
+        width: 90%;
+        margin: auto;
+      }
       ul {
         margin-top: 30px;
         padding-left: 0;
@@ -465,14 +705,91 @@ hr {
 }
 
 .pricingFAQ {
-  margin: 60px 0 0 0;
+  margin: 60px auto;
   text-align: center;
+  width: 50%;
+  font-family: "Inter", sans-serif;
+
+  @include mobile {
+    width: 90%;
+  }
   img {
-    width: 35%;
+    width: 75%;
+    @include mobile {
+      width: 100%;
+    }
   }
   h3 {
     font-family: "Poppins", sans-serif;
     font-size: 35px;
+    @include mobile {
+      font-size: 32px;
+    }
+  }
+
+  details {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    padding: 10px 0;
+    cursor: pointer;
+
+    summary {
+      list-style: none;
+    }
+
+    &[open] {
+      font-size: 16px;
+      line-height: 20px;
+      summary {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.aboutFirst {
+  text-align: center;
+  width: 80%;
+  margin: 80px auto;
+
+  .aboutFirst_Team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    img {
+      width: 20%;
+      margin: 20px;
+      @include mobile {
+        width: 35%;
+      }
+    }
+  }
+}
+
+.aboutSecond {
+  text-align: center;
+  width: 60%;
+  margin: 60px auto;
+  @include mobile {
+    width: 80%;
+    br {
+      display: none;
+    }
+  }
+
+  hr {
+    margin: 60px 0 20px 0;
+  }
+  img {
+    width: 70%;
+    margin: 50px;
+    @include mobile {
+      width: 80%;
+      margin: 20px auto 20px auto;
+    }
   }
 }
 
@@ -485,12 +802,22 @@ hr {
   font-size: 14px;
   color: $blackMenu;
 
+  @include mobile {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 12px;
+    margin: 3vh 0;
+  }
+
   .footer_Logo {
     img {
       width: 60px;
     }
     p {
       font-weight: 400;
+    }
+    @include mobile {
+      width: 100%;
     }
   }
 
@@ -509,6 +836,11 @@ hr {
           color: $blue;
         }
       }
+    }
+
+    @include mobile {
+      margin-top: 20px;
+      padding-left: 0;
     }
   }
 }
