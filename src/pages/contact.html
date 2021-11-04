@@ -9,7 +9,7 @@
   </head>
   <body>
     <header class="header">
-      <img class="header_Logo" src="../assets/img/logo.png" alt="Logo Lando" />
+        <a href="../../index.html"><img class="header_Logo" src="../assets/img/logo.png" alt="Logo Lando" /></a>
       <nav>
         <ul class="header_Menu">
           <li><a href="../../index.html">Home</a></li>
@@ -62,13 +62,13 @@
             <div class="homeContact_rightPart">
                 <h2>Contact Us</h2>
                 <p>Explore the future with us.<br> Feel free to get in touch</p>
-                <form action="" method="get" enctype="multipart/form-data">
+                <form action="" method="POST">
                     <label>Name</label>
-                    <input placeholder="Full Name" type="text">
+                    <input placeholder="Full Name" type="text" required>
                     <label>Email</label>
-                    <input type="email" placeholder="Email address">
+                    <input type="email" placeholder="Email address" required>
                     <label>Message</label>
-                    <input placeholder="How can we get better?" type="text">
+                    <input placeholder="How can we get better?" type="text" required>
                     <button>Send message</button>
                 </form>
             </div>
