@@ -547,6 +547,7 @@ hr {
         width: 80%;
         margin: 30px;
         text-align: center;
+        position: relative;
         p {
           width: 80%;
           margin: 20px auto 20px auto;
@@ -596,6 +597,15 @@ hr {
         padding: 5px 20px;
         border-radius: 20px;
         letter-spacing: normal;
+        @include mobile {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+          line-height: 35px;
+        }
       }
     }
     button {
@@ -789,6 +799,98 @@ hr {
     @include mobile {
       width: 80%;
       margin: 20px auto 20px auto;
+    }
+  }
+}
+
+.homeContact {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "leftArea rightArea";
+  padding: 4vh 0;
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  img {
+    padding-top: 20%;
+    grid-area: leftArea;
+    width: 100%;
+    @include mobile {
+      padding-top: 0;
+    }
+  }
+  .homeContact_rightPart {
+    grid-area: rightArea;
+    color: $black;
+    padding-left: 10%;
+    @include mobile {
+      text-align: center;
+      padding: 0;
+      margin: auto;
+    }
+    h2 {
+      font-family: "Poppins";
+      font-size: 75px;
+      line-height: 1em;
+      margin: 20px 20px 40px 0px;
+      @include mobile {
+        font-size: 50px;
+        margin: 20px auto 40px auto;
+      }
+    }
+    p {
+      font-family: "Poppins";
+      font-size: 18px;
+      font-weight: lighter;
+      line-height: 1em;
+    }
+    form {
+      label {
+        font-family: "Poppins";
+      }
+      input {
+        font-family: "Poppins";
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100% 100% 100%;
+        grid-template-areas: "firstArea secondArea thirtArea";
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border: white;
+        border-radius: 12px;
+        width: 450px;
+        @include mobile {
+          width: 90%;
+          margin: 5px auto 20px auto;
+          padding: 1rem 12px;
+        }
+      }
+    }
+    button {
+      font-family: "Inter";
+      font-weight: 400;
+      font-size: 16px;
+      background-color: $blue;
+      border-radius: 10px;
+      border: solid 1px $blue;
+      padding: 1rem;
+      color: white;
+      margin-top: 3vh;
+      cursor: pointer;
+      width: 480px;
+
+      &:hover {
+        background-color: $bg;
+        color: $blue;
+      }
+      @include mobile {
+        width: 100%;
+        padding: 1rem 20px;
+        margin-top: 1vh;
+      }
     }
   }
 }

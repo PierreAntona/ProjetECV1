@@ -547,6 +547,7 @@ hr {
     width: 80%;
     margin: 30px;
     text-align: center;
+    position: relative;
   }
   .pricingFirst .pricingFirst_Cards .pricingFirst_Card p {
     width: 80%;
@@ -601,6 +602,17 @@ hr {
   padding: 5px 20px;
   border-radius: 20px;
   letter-spacing: normal;
+}
+@media screen and (max-width: 1220px) {
+  .pricingFirst .pricingFirst_Cards .pricingFirst_Card .pricingFirst_Popular {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    line-height: 35px;
+  }
 }
 .pricingFirst .pricingFirst_Cards button {
   grid-area: botArea;
@@ -801,6 +813,106 @@ hr {
   .aboutSecond img {
     width: 80%;
     margin: 20px auto 20px auto;
+  }
+}
+
+.homeContact {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "leftArea rightArea";
+  padding: 4vh 0;
+}
+@media screen and (max-width: 1220px) {
+  .homeContact {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.homeContact img {
+  padding-top: 20%;
+  grid-area: leftArea;
+  width: 100%;
+}
+@media screen and (max-width: 1220px) {
+  .homeContact img {
+    padding-top: 0;
+  }
+}
+.homeContact .homeContact_rightPart {
+  grid-area: rightArea;
+  color: #030303;
+  padding-left: 10%;
+}
+@media screen and (max-width: 1220px) {
+  .homeContact .homeContact_rightPart {
+    text-align: center;
+    padding: 0;
+    margin: auto;
+  }
+}
+.homeContact .homeContact_rightPart h2 {
+  font-family: "Poppins";
+  font-size: 75px;
+  line-height: 1em;
+  margin: 20px 20px 40px 0px;
+}
+@media screen and (max-width: 1220px) {
+  .homeContact .homeContact_rightPart h2 {
+    font-size: 50px;
+    margin: 20px auto 40px auto;
+  }
+}
+.homeContact .homeContact_rightPart p {
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 1em;
+}
+.homeContact .homeContact_rightPart form label {
+  font-family: "Poppins";
+}
+.homeContact .homeContact_rightPart form input {
+  font-family: "Poppins";
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100% 100% 100%;
+  grid-template-areas: "firstArea secondArea thirtArea";
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: white;
+  border-radius: 12px;
+  width: 450px;
+}
+@media screen and (max-width: 1220px) {
+  .homeContact .homeContact_rightPart form input {
+    width: 90%;
+    margin: 5px auto 20px auto;
+    padding: 1rem 12px;
+  }
+}
+.homeContact .homeContact_rightPart button {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #2f63f4;
+  border-radius: 10px;
+  border: solid 1px #2f63f4;
+  padding: 1rem;
+  color: white;
+  margin-top: 3vh;
+  cursor: pointer;
+  width: 480px;
+}
+.homeContact .homeContact_rightPart button:hover {
+  background-color: #ededed;
+  color: #2f63f4;
+}
+@media screen and (max-width: 1220px) {
+  .homeContact .homeContact_rightPart button {
+    width: 100%;
+    padding: 1rem 20px;
+    margin-top: 1vh;
   }
 }
 
